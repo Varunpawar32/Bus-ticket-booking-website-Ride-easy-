@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book ticket</title>
+    <link rel="stylesheet" href="search trip.css">
+</head>
+<body><h1><b>Ride easy book ticket</b></h1>
+    <header>
+        
+    <nav>
+       <ul class="navbar"> 
+        <li><a href="my profile.html">My profile</a> </li>
+        <li><a href="booke ticket.html">Book Ticket</a> </li>
+        <li><a href="existing ticket.html">View Booked Ticket</a></li> 
+        <li><a href="aboutus.html">About Us</a></li> 
+        <li><a href="help.html">Help</a></li>
+        <li><a href="loginform.php">Logout</a></li>
+       </ul>
+    </nav>
+    </header>
+    
+    <div class="search-trip-container">
+    <form id="search trip" >
+    <table>
+    <tr><td><Label id="frm" for="frm">FROM</Label></td><td><input id="frm" list="places" required></td></tr>
+    <tr><td><Label id="frm" for="to">TO</Label></td><td><input id="to" list="places" required></td></tr>
+    <tr><td><Label id="frm" for="doj">DATE OF JOURNEY</Label></td><td><input id="doj" type="date" required></td></tr>
+    </table>
+    <button type="submit">Search bus</button>
+    </form>
+    </div>
+
+    <datalist id="places">
+        <option value="Mumbai"></option>
+        <option value="Pune"></option>
+        <option value="Nashik"></option>
+    </datalist>
+</body>
+</html>

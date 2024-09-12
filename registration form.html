@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bt.css"> 
+    <title>Rideeasy registration </title>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>RIDE EASY REGISTRATION</h2>  
+        <form id="registration-form" action="submit.php" method="post">
+            <table>
+                <tr>
+                    <td><label for="fn">First name : </label></td>
+                    <td><input type="text" name="fname" id="fn" title="enter first name" required></td></tr>
+                    <tr></tr><td colspan="2" align="end"><span id="fname-error"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="mn">Middle name :</label></td>
+                    <td><input type="text" name="mname" id="mn" title="enter middle name" required></td></tr>
+                    <tr><td colspan="2" align="end"><span id="mname-error"></span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="ln">Last name :</label></td>
+                    <td><input type="text" name="lname" id="ln" title="enter last name" required></td></tr>
+                 <tr><td colspan="2" align="end"><span id="lname-error"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of birth :</label></td>
+                    <td><input type="date" name="dob" id="dob" title="enter date of birth" required> </td></tr>
+                <tr><td colspan="2" align="end"><span id="dob-error"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="mno">Mobile no :</label></td>
+                    <td><input type="tel" name="mno" id="mno" minlength="10" maxlength="10" title="enter your mobile number" required></td></tr>
+                <tr><td colspan="2" align="end"><span id="mno-error"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="eid">Email id :</label></td>
+                    <td><input type="email" name="eid" id="eid" minlength="10" maxlength="30" title="enter your email address" required></td></tr>
+                <tr><td colspan="2" align="end"><span id="eid-error"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd">Create a password :</label></td>
+                    <td><input type="password" name="pass" id="pwd" minlength="8" maxlength="20" title="create a new password" required></td></tr>
+                <tr><td colspan="2" align="end"><span id="pwd-error"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="end"><span>password must be at least 8 characters long <br>combination of 1 Uppercase, 1 Lowercase, and 1 number</span></td>
+                </tr>
+                <tr>
+                    <td><label for="cpwd">Confirm password :</label></td>
+                    <td><input type="password" name="cpass" id="cpwd" title="confirm your password" required></td></tr>
+                 <tr><td colspan="2" align="end"><span id="cpwd-error"></span></td>
+                </tr>
+                <br>
+            </table>
+            <br>
+            <button type="submit" onclick="return formValidation()" value="submit">Submit</button>
+            <button type="reset" value="reset">Reset</button>
+            <p>If already registered, <a href="login form.php">login</a></p> 
+        </form>
+    </div>
+    <script type="text/javascript" src="registration.js"></script>
+</body>
+</html>
